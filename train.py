@@ -1,13 +1,9 @@
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
+from dvclive.keras import DvcLiveCallback
 
-batch_size = 64  # Batch size for training.
-epochs = 100  # Number of epochs to train for.
-latent_dim = 256  # Latent dimensionality of the encoding space.
-num_samples = 10000  # Number of samples to train on.
-# Path to the data txt file on disk.
-data_path = "fra.txt"
+from params import *
 
 # Vectorize the data.
 input_texts = []
@@ -103,6 +99,7 @@ model.fit(
     batch_size=batch_size,
     epochs=epochs,
     validation_split=0.2,
+    callbacks=[DvcLiveCallback(path="results")]
 )
 # Save model
 model.save("s2s")
