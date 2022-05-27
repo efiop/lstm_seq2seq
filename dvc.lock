@@ -18,10 +18,10 @@ stages:
         num_samples: 10000
     outs:
     - path: results
-      md5: c0bc2104cfc8b1d0a4031a5a884c7168.dir
-      size: 17214
+      md5: 28ef3176d9e1a9311d1db70df2cbebad.dir
+      size: 17926
       nfiles: 5
     - path: results.json
-      md5: 494d0f6c6cb5618a1531c12d75cff522
-      size: 159
+      md5: b38b2e9031d0da596e91feecc36b050d
+      size: 161
     - path: s2s
