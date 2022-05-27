@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: fra.txt
+      md5: a7db8e1289bc07cd6884a8575dfacdb2
+      size: 29347444
+    - path: train.py
+      md5: 0a6a419bbb3f3e7360f4c97e02c07c22
+      size: 4239
+    params:
+      params.py:
+        batch_size: 64
+        data_path: fra.txt
+        epochs: 1
+        latent_dim: 128
+        num_samples: 10000
+    outs:
+    - path: results
+      md5: c82fe3af964a85136f82f711542d7ba7.dir
+      size: 16512
+      nfiles: 5
+    - path: results.json
+      md5: e1141e0bec866a01fd8e26516f6fe815
+      size: 160
+    - path: s2s
+      md5: 4104b0858e7cab17a0f4e4b6955d0e22.dir
+      size: 3298148
+      nfiles: 4
