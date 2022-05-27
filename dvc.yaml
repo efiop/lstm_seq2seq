@@ -1,0 +1,16 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - fra.txt
+    - train.py
+    params:
+    - params.py:
+    outs:
+    - s2s
+    metrics:
+    - results.json:
+        cache: false
+    plots:
+    - results:
+        cache: false
