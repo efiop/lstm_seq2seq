@@ -13,16 +13,16 @@ stages:
       params.py:
         batch_size: 64
         data_path: fra.txt
-        epochs: 1
+        epochs: 2
         latent_dim: 128
         num_samples: 10000
     outs:
     - path: results
-      md5: 6bf86037c9ee23f5796bcbb574fe5da0.dir
+      md5: 9d5d10c6674487df04bd4c188d53b495.dir
       size: 16512
       nfiles: 5
     - path: results.json
-      md5: bcb3978a129741ab9f8199adec88cdfd
+      md5: 9adb199a191c5f04bf8b0a6a66d8fba9
       size: 160
     - path: s2s
       md5: 21359fbb26e193c8ade7f3152a08e672.dir
