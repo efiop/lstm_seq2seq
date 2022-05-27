@@ -25,3 +25,6 @@ stages:
       md5: 58b440dd7bdefad72ecfd11c1180556e
       size: 160
     - path: s2s
+      md5: df4011d852a5d939864520d911285bf8.dir
+      size: 3298259
+      nfiles: 4
