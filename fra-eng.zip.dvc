@@ -1,0 +1,10 @@
+md5: e6fe50a43345cbd3a3fec2fe7197e66b
+frozen: true
+deps:
+- checksum: '169017719147107183423162803773137512064'
+  size: 6612164
+  path: http://www.manythings.org/anki/fra-eng.zip
+outs:
+- md5: 6b1f96b51cf119c309335a6d0ccd9d3e
+  size: 6612164
+  path: fra-eng.zip
