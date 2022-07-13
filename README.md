@@ -2,8 +2,8 @@
 
 Source: https://keras.io/examples/nlp/lstm_seq2seq/.
 
-Download the data:
+Run:
 ```
-$ curl -O http://www.manythings.org/anki/fra-eng.zip
-$ unzip fra-eng.zip
+$ pip install -r requirements.txt
+$ dvc exp run
 ```
